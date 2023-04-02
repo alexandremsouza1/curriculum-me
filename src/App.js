@@ -7,9 +7,9 @@ import { MyDocument } from './elements/Document';
 
 // Font.register('https://fonts.googleapis.com/css?family=Roboto', { family: 'Roboto' });
 // eslint-disable-next-line no-restricted-globals
-Font.register(`${window.location.href}/assets/Lato-Regular.ttf`, { family: 'Lato' });
-Font.register(`${window.location.href}/assets/Roboto-Regular.ttf`, { family: 'Roboto' });
-Font.register(`${window.location.href}/assets/Roboto-Bold.ttf`, { family: 'Roboto-Bold' });
+Font.register(`${window.location.href}assets/Lato-Regular.ttf`, { family: 'Lato' });
+Font.register(`${window.location.href}assets/Roboto-Regular.ttf`, { family: 'Roboto' });
+Font.register(`${window.location.href}assets/Roboto-Bold.ttf`, { family: 'Roboto-Bold' });
 
 class App extends Component {
   render() {
