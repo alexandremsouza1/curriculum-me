@@ -5,11 +5,16 @@ import { MyDocument } from './elements/Document';
 
 // Register Fonts
 
-// Font.register('https://fonts.googleapis.com/css?family=Roboto', { family: 'Roboto' });
-// eslint-disable-next-line no-restricted-globals
-Font.register(`http://localhost:3000/assets/Lato-Regular.ttf`, { family: 'Lato' });
-Font.register(`http://localhost:3000/assets/Roboto-Regular.ttf`, { family: 'Roboto' });
-Font.register(`http://localhost:3000/assets/Roboto-Bold.ttf`, { family: 'Roboto-Bold' });
+import Lato from '../public/assets/Lato-Regular.ttf'
+import RobotoRegular from '../public/assets/Roboto-Regular.ttf'
+import RobotoBold from '../public/assets/Roboto-Bold.ttf'
+
+
+Font.register('https://fonts.googleapis.com/css?family=Roboto', { family: 'Roboto' });
+Font.register({ family: 'Inter UI', src: Lato })
+Font.register({ family: 'Roboto', src: RobotoRegular })
+Font.register({ family: 'Roboto', src: RobotoBold })
+
 
 class App extends Component {
   render() {
