@@ -1,6 +1,6 @@
-import { Font, PDFViewer } from '@react-pdf/renderer';
-import React, { Component } from 'react';
-
+import { Font, PDFViewer, Document } from '@react-pdf/renderer';
+import React, { Component  } from 'react';
+import LoadingSpinner from './components/LoadingSpinner';
 import { MyDocument } from './elements/Document';
 
 // Register Fonts
@@ -12,11 +12,22 @@ Font.register(`${window.location.href}assets/Roboto-Regular.ttf`, { family: 'Rob
 Font.register(`${window.location.href}assets/Roboto-Bold.ttf`, { family: 'Roboto-Bold' });
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { pdfLoaded: false };
+  }
   render() {
     return (
-      <PDFViewer style={{ width: '100vw', height: '100vh' }}>
-        <MyDocument />
-      </PDFViewer>
+        <>
+          {this.state.pdfLoaded ? null : (
+              <LoadingSpinner />
+          )}
+          <PDFViewer style={{ width: '100vw', height: '100vh' }}>
+            <Document onRender={() =>  this.setState({ pdfLoaded: true })}>
+              <MyDocument />
+            </Document>
+          </PDFViewer>
+        </>   
     );
   }
 }
