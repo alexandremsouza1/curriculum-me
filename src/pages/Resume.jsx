@@ -142,13 +142,13 @@ const ResumePage = () => (
               { marginTop: 5, marginLeft: -10, marginRight: -10 },
             ]}
           >
-            Olá, meu nome é Alexandre e sou um desenvolvedor web experiente com
+            Olá, meu nome é Alexandre. 
+            Sou desenvolvedor web experiente com
             mais de 5 anos de atuação no mercado. Formado em Sistemas de
             Informação, tenho sólidos conhecimentos em desenvolvimento web e
-            programação em geral. Minha experiência abrange desde o
-            desenvolvimento de sites institucionais e blogs até aplicações web
-            complexas, utilizando as mais diversas tecnologias e frameworks do
-            mercado.
+            programação em geral. 
+            Minha experiência abrange desde o desenvolvimento de sites institucionais e blogs até aplicações web
+            complexas, utilizando as mais diversas tecnologias e frameworks do mercado.
           </Text>
         </View>
         <View style={styles.icon_container}>
@@ -193,7 +193,7 @@ const ResumePage = () => (
         <View style={styles.row}>
           <Image style={styles.small_icon} src="assets/icon-phone.png" />
 
-          <Text style={styles.contactdetails}>(+37)9 999492674</Text>
+          <Text style={styles.contactdetails}>(+37)9 99492674</Text>
           <Image style={styles.small_icon} src="assets/icon-mail.png" />
 
           <Text style={styles.contactdetails}> xandemag@gmail.com</Text>
