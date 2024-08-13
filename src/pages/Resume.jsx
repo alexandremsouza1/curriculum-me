@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'Roboto',
     color: '#22292f',
-    backgroundColor: '#e0e4e9'
+    backgroundColor: '#FFFFFF'
   },
   image: {
     width: 128,
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   sidebar: {
     padding: 20,
 
-    backgroundColor: '#cdd1d7'
+    backgroundColor: '#cdcdcd'
   },
   sidebar_content: {
     marginTop: 20,
@@ -142,13 +142,12 @@ const ResumePage = () => (
               { marginTop: 5, marginLeft: -10, marginRight: -10 },
             ]}
           >
-            Olá, meu nome é Alexandre. 
-            Sou desenvolvedor web experiente com
-            mais de 5 anos de atuação no mercado. Formado em Sistemas de
-            Informação, tenho sólidos conhecimentos em desenvolvimento web e
-            programação em geral. 
-            Minha experiência abrange desde o desenvolvimento de sites institucionais e blogs até aplicações web
-            complexas, utilizando as mais diversas tecnologias e frameworks do mercado.
+            Graduado em Sistemas de Informação, sou um profissional da área da
+            tecnologia com foco principal no desenvolvimento de soluções
+            backend. Tenho uma sólida experiência em arquitetura limpa e
+            aplicação de boas práticas de desenvolvimento. Como desenvolvedor
+            experiente, já trabalhei com uma variedade de projetos, incluindo
+            e-commerce, sistemas de rastreamento e integrações.
           </Text>
         </View>
         <View style={styles.icon_container}>
@@ -222,7 +221,7 @@ const ResumePage = () => (
         </View>
         <View style={styles.timeline_item}>
           <View style={{ width: 80, padding: 5, paddingTop: 0 }}>
-            <Text>2022 - Agora</Text>
+            <Text>2022 - 2024</Text>
           </View>
 
           <View style={{}}>
@@ -242,7 +241,10 @@ const ResumePage = () => (
           </View>
 
           <View style={{}}>
-            <Image style={styles.timeline_bullet} src="assets/timeline-bullet.png" />
+            <Image
+              style={styles.timeline_bullet}
+              src="assets/timeline-bullet.png"
+            />
           </View>
           <View style={{ padding: 5, paddingTop: 0 }}>
             <Text style={styles.company}>TRACKER UP TECNOLOGIA LTDA</Text>
@@ -255,7 +257,10 @@ const ResumePage = () => (
           </View>
 
           <View style={{}}>
-            <Image style={styles.timeline_bullet} src="assets/timeline-bullet.png" />
+            <Image
+              style={styles.timeline_bullet}
+              src="assets/timeline-bullet.png"
+            />
           </View>
           <View style={{ padding: 5, paddingTop: 0 }}>
             <Text style={styles.company}>W.E LOGUS INFORMATICA LTDA</Text>
@@ -268,7 +273,10 @@ const ResumePage = () => (
           </View>
 
           <View style={{}}>
-            <Image style={styles.timeline_bullet} src="assets/timeline-bullet-last.png" />
+            <Image
+              style={styles.timeline_bullet}
+              src="assets/timeline-bullet-last.png"
+            />
           </View>
           <View style={{ padding: 5, paddingTop: 0 }}>
             <Text style={styles.company}>SOL LOGISTICA E LOCAÇÕES LTDA ME</Text>
@@ -276,13 +284,25 @@ const ResumePage = () => (
           </View>
         </View>
 
-        <View style={{ display: 'flex', flexDirection: 'row', marginTop: 13, marginBottom: 10 }}>
+        <View
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            marginTop: 13,
+            marginBottom: 10,
+          }}
+        >
           <View style={(styles.icon_container, { paddingLeft: 0 })}>
             <View style={styles.circle} />
             <Image style={styles.icon} src="assets/icon-library.png" />
           </View>
 
-          <View style={(styles.subject, { textAlign: 'left', paddingTop: 8, paddingLeft: 10 })}>
+          <View
+            style={
+              (styles.subject,
+              { textAlign: "left", paddingTop: 8, paddingLeft: 10 })
+            }
+          >
             <Text style={styles.subject_title}>EDUCAÇÃO</Text>
           </View>
         </View>
@@ -293,21 +313,37 @@ const ResumePage = () => (
           </View>
 
           <View style={{}}>
-            <Image style={styles.timeline_bullet} src="assets/timeline-bullet.png" />
+            <Image
+              style={styles.timeline_bullet}
+              src="assets/timeline-bullet.png"
+            />
           </View>
           <View style={{ padding: 5, paddingTop: 0 }}>
-            <Text style={styles.company}>Pontifícia Universidade Católica de Minas Gerais</Text>
+            <Text style={styles.company}>
+              Pontifícia Universidade Católica de Minas Gerais
+            </Text>
             <Text>Bacharel em Sistemas da Informação</Text>
           </View>
         </View>
 
-
-        <View style={{ display: 'flex', flexDirection: 'row', marginTop: 17, marginBottom: 10 }}>
+        <View
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            marginTop: 17,
+            marginBottom: 10,
+          }}
+        >
           <View style={(styles.icon_container, { paddingLeft: 0 })}>
             <View style={styles.circle} />
             <Image style={styles.icon} src="assets/icon-thumbs-up.png" />
           </View>
-          <View style={(styles.subject, { textAlign: 'left', paddingTop: 8, paddingLeft: 10 })}>
+          <View
+            style={
+              (styles.subject,
+              { textAlign: "left", paddingTop: 8, paddingLeft: 10 })
+            }
+          >
             <Text style={styles.subject_title}>PAIXÃO POR</Text>
           </View>
         </View>
@@ -363,7 +399,7 @@ const ResumePage = () => (
       ]}
     >
       <Text fixed={true}>
-          Todos os direitos reservados 
+        Todos os direitos reservados
         <Text style={styles.strong}> ©{new Date().getFullYear()}</Text>
       </Text>
     </View>
