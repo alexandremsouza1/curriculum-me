@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
     color: "#305fec",
     lineHeight: 0,
     flexGrow: 1,
-    textAlign: "left",
     marginLeft: 10,
   },
   contactdetails: {
