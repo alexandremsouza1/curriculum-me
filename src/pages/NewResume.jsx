@@ -129,7 +129,7 @@ const sections = [
     jobs: [
       {
         company: "LETS Delivery",
-        period: "Feb 2025 - Present · 2 mos, São Paulo, Brazil · Remote",
+        period: "Feb 2025 - Present, São Paulo, Brazil · Remote",
         role: "Full Stack Engineer",
         description: `- Responsible for maintaining and developing projects related to the integration hub.
         - Developed APIs using Node.js and implemented serverless functions with AWS Lambda.
@@ -140,7 +140,7 @@ const sections = [
       {
         company: "Plastika Produtos Digitais",
         period:
-          "Oct 2024 - Feb 2025 · 5 mos, Curitiba, Paraná, Brazil · Remote",
+          "Oct 2024 - Feb 2025, Curitiba, Paraná, Brazil · Remote",
         role: "Full-Stack Web-Developer",
         description: `- Responsible for maintaining the Aston project, a fintech focused on providing digital financial solutions.
                 - Developed a feature that enables fiduciary agents and banking correspondents to sell financial products directly through the platform.
