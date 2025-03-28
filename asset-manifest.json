@@ -1,13 +1,13 @@
 {
   "main.css": "/curriculum-me/static/css/main.40d87e98.chunk.css",
-  "main.js": "/curriculum-me/static/js/main.17b1d72b.chunk.js",
-  "main.js.map": "/curriculum-me/static/js/main.17b1d72b.chunk.js.map",
+  "main.js": "/curriculum-me/static/js/main.bf753b4e.chunk.js",
+  "main.js.map": "/curriculum-me/static/js/main.bf753b4e.chunk.js.map",
   "runtime~main.js": "/curriculum-me/static/js/runtime~main.f1f54244.js",
   "runtime~main.js.map": "/curriculum-me/static/js/runtime~main.f1f54244.js.map",
   "static/js/2.e6eba976.chunk.js": "/curriculum-me/static/js/2.e6eba976.chunk.js",
   "static/js/2.e6eba976.chunk.js.map": "/curriculum-me/static/js/2.e6eba976.chunk.js.map",
   "index.html": "/curriculum-me/index.html",
-  "precache-manifest.40d9805832eb7217e9168002242c7a89.js": "/curriculum-me/precache-manifest.40d9805832eb7217e9168002242c7a89.js",
+  "precache-manifest.d06fc776969902289abac0d979018c22.js": "/curriculum-me/precache-manifest.d06fc776969902289abac0d979018c22.js",
   "service-worker.js": "/curriculum-me/service-worker.js",
   "static/css/main.40d87e98.chunk.css.map": "/curriculum-me/static/css/main.40d87e98.chunk.css.map"
 }
