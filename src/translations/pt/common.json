@@ -1,0 +1,101 @@
+{
+  "app": {
+    "title": "Currículo"
+  },
+  "contact": {
+    "firstName": "Alexandre",
+    "lastName": "Magno",
+    "email": "alexandremagnodev0@gmail.com",
+    "phone": "(37)9 9949-2674",
+    "location": "Minas Gerais, Brazil"
+  },
+  "sections": {
+    "aboutMe": "Sobre Mim",
+    "interests": "Interesses",
+    "professionalSummary": "Resumo Profissional",
+    "personalInformation": "Informações Pessoais",
+    "workExperience": "Experiência Profissional",
+    "education": "Educação",
+    "skills": "Habilidades",
+    "passion": "Paixão por"
+  },
+  "professionalSummary": {
+    "content": "Desenvolvedor full-stack com ênfase em desenvolvimento backend. Habilidade comprovada em projetar, desenvolver e implantar aplicações web robustas. Buscando um papel desafiador para aproveitar minhas habilidades em Golang, PHP (Laravel e outros), NodeJS e contribuir para projetos inovadores."
+  },
+  "personalInformation": {
+    "content": "Data de Nascimento: 04/04/90\nLinkedIn: https://www.linkedin.com/in/alexandre-m-souza/"
+  },
+  "jobs": [
+    {
+      "company": "LETS Delivery",
+      "period": "Fev 2025 - Presente, São Paulo, Brazil · Remoto",
+      "role": "Engenheiro Full Stack",
+      "description": "- Responsável pela manutenção e desenvolvimento de projetos relacionados ao hub de integração.\n- Desenvolveu APIs usando Node.js e implementou funções serverless com AWS Lambda.\n- Integrou merchants com múltiplos marketplaces e parceiros logísticos em um sistema unificado.\n- Seguiu as melhores práticas de desenvolvimento, escrevendo código limpo e eficiente.\n- Implementou testes unitários com Jest para garantir qualidade e confiabilidade do código."
+    },
+    {
+      "company": "Plastika Produtos Digitais",
+      "period": "Out 2024 - Fev 2025, Curitiba, Paraná, Brazil · Remoto",
+      "role": "Desenvolvedor Web Full-Stack",
+      "description": "- Responsável pela manutenção do projeto Aston, uma fintech focada em fornecer soluções financeiras digitais.\n- Desenvolveu uma funcionalidade que permite a agentes fiduciários e correspondentes bancários venderem produtos financeiros diretamente pela plataforma.\n- Trabalhou no desenvolvimento, teste e otimização com foco em estabilidade e performance.\n- Garantiu escalabilidade, suporte multi-provedor, performance e disponibilidade.\n- Utilizou Laravel Nova para construir e gerenciar a interface administrativa da plataforma."
+    },
+    {
+      "company": "Mobiup Beyond Digital",
+      "period": "Mai 2022 - Jul 2024, São Paulo",
+      "role": "Desenvolvedor Web Full-Stack",
+      "description": "- Trabalhou nas equipes de suporte e projetos, contribuindo com várias iniciativas de e-commerce.\n- Participou de um projeto para uma plataforma que oferece benefícios exclusivos e pontos de fidelidade para compras.\n- Desenvolveu soluções para um sistema de tickets, integrando vários serviços e APIs.\n- Contribuiu ativamente para a plataforma de e-commerce da Coca-Cola, focada nos produtos da empresa.\n- Participou de um projeto em larga escala envolvendo a migração de um sistema legado para uma arquitetura de microsserviços, cobrindo tanto o backend quanto a migração da aplicação.\n- Implementou melhorias de performance, segurança e escalabilidade durante o processo de migração, usando práticas modernas de desenvolvimento de software.\n- Trabalhou com WordPress, customizando temas e plugins para melhorar a funcionalidade.\n- Desenvolveu e manteve sites usando WordPress Elementor, garantindo designs responsivos e dinâmicos.\n- Integrou plugins de terceiros e otimizou plataformas baseadas em WordPress para performance e SEO."
+    },
+    {
+      "company": "Trackerup Tecnologia LTDA",
+      "period": "Abr 2018 - Mai 2022, São Paulo",
+      "role": "Desenvolvedor de Software",
+      "description": "- Trabalhou na manutenção do projeto de rastreamento TrackerUp, que permite coordenação avançada de equipes externas de forma rápida e simplificada. Principais funcionalidades: gerenciamento de tarefas em tempo real, sugestões de rotas, histórico de rotas percorridas, relatórios inteligentes.\n- Participou da implementação de um grande projeto para a Whirlpool, gerenciando tarefas para funcionários responsáveis pela manutenção de eletrodomésticos.\n- Contribuiu para a implementação de um projeto para a Sanofi, calculando rotas de clientes com base em uma agenda de visitas para otimizar custos para a empresa."
+    },
+    {
+      "company": "W.E Logus Informática LTDA",
+      "period": "Dez 2016 - Nov 2017, Formiga",
+      "role": "Assistente de T.I",
+      "description": "- Inicialmente trabalhou no atendimento e suporte ao cliente antes de transitar para o departamento de qualidade.\n- Desenvolveu métricas para avaliar o desempenho do atendimento ao cliente e coletou dados para avaliar a aceitação de novos recursos e os resultados esperados.\n- Testou recursos implantados no Eficaz ERP CRM para identificar quaisquer efeitos colaterais ou problemas.\n- Responsável pela migração de banco de dados e garantia da integridade dos dados durante as transições."
+    },
+    {
+      "company": "SOL Logística e Locações LTDA ME",
+      "period": "Abr 2016 - Ago 2016, Belo Horizonte",
+      "role": "Assistente Administrativo",
+      "description": "- Gerenciou a emissão de documentos fiscais relacionados a operações de carga.\n- Controlou operações internas para o projeto Farinha Vilma, supervisionando o gerenciamento de inventário de produtos entrantes e saindo do armazém.\n- Participou da instalação da rede interna e configuração de servidores para suportar as necessidades operacionais."
+    }
+  ],
+  "education": {
+    "title": "Pontifícia Universidade Católica de Minas Gerais - PUC",
+    "content": "Bacharelado em Sistemas de Informação | 06/2011 - 06/2015"
+  },
+  "skills": {
+    "list": [
+      "Vue",
+      "React",
+      "Laravel",
+      "React-Native",
+      "Expo",
+      "PHP",
+      "Go",
+      "NodeJS",
+      "Javascript",
+      "Typescript",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  "aboutMe": {
+    "content": "Graduado em Sistemas de Informação, sou um profissional da área da tecnologia com foco principal no desenvolvimento de soluções backend. Tenho uma sólida experiência em arquitetura limpa e aplicação de boas práticas de desenvolvimento. Como desenvolvedor experiente, já trabalhei com uma variedade de projetos, incluindo e-commerce, sistemas de rastreamento e integrações."
+  },
+  "interests": {
+    "frontend": "Front-end Development",
+    "backend": "Back-end Development",
+    "devops": "Dev-Ops Engineering",
+    "qa": "Quality Assurance Analyst"
+  },
+  "header": {
+    "birthday": "Abr 04-04-1990"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados"
+  }
+}
