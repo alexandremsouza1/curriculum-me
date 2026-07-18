@@ -1,0 +1,101 @@
+{
+  "app": {
+    "title": "Resume"
+  },
+  "contact": {
+    "firstName": "Alexandre",
+    "lastName": "Magno",
+    "email": "alexandremagnodev0@gmail.com",
+    "phone": "(37)9 9949-2674",
+    "location": "Minas Gerais, Brazil"
+  },
+  "sections": {
+    "aboutMe": "About Me",
+    "interests": "Interests",
+    "professionalSummary": "Professional Summary",
+    "personalInformation": "Personal Information",
+    "workExperience": "Work Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "passion": "Passion For"
+  },
+  "professionalSummary": {
+    "content": "Backend Software Engineer with extensive experience in Clean Architecture, best development practices, and scalable solutions. My expertise lies in Go, Node.js, and Laravel (PHP), always prioritizing maintainable and efficient code. I am an enthusiast of Docker and Kubernetes, using them for automation and scalability in development and production environments. I believe in the power of Unit Testing and TDD to ensure software reliability and to solve problems before they arise. Agile methodologies are an essential part of my work, and I am constantly seeking innovation to strengthen the stability and evolution of systems."
+  },
+  "personalInformation": {
+    "content": "Date of Birth: 04/04/1990\nLinkedIn: https://www.linkedin.com/in/alexandre-m-souza/\nPersonal website: https://alexandremsouza1.github.io/curriculum-me/"
+  },
+  "jobs": [
+    {
+      "company": "LETS Delivery",
+      "period": "February 2025 - Present, São Paulo, Brazil · Remote",
+      "role": "Full Stack Engineer",
+      "description": "- Responsible for maintaining and developing projects related to the integrations hub.\n- Use Node.js to build APIs and AWS Lambda for serverless functions, connecting merchants to various marketplaces and logistics partners in a unified system.\n- Adopt development best practices, writing clean and efficient code.\n- Implement unit tests with Jest to ensure the quality and reliability of delivered solutions."
+    },
+    {
+      "company": "Plastika Produtos Digitais",
+      "period": "October 2024 - February 2025, Curitiba, Paraná, Brazil · Remote",
+      "role": "Full-Stack Web Developer",
+      "description": "- Responsible for maintaining the Aston project, a fintech focused on offering digital financial solutions.\n- Developed the functionality that allows fiduciary agents and banking correspondents to sell financial products directly through the platform.\n- Worked on development, testing, and optimization, with a focus on stability and performance.\n- Ensured scalability, support for multiple providers, performance, and availability."
+    },
+    {
+      "company": "Mobiup - Beyond Digital",
+      "period": "May 2022 - July 2024, São Paulo, Brazil",
+      "role": "Web Developer",
+      "description": "- Responsible for driving improvements, implementing new features, and performing fixes, ensuring the stability and efficiency of systems.\n- Maintenance and enhancement of e-commerce projects, blogs, and payment method integrations, aiming to improve user experience, optimize purchasing processes, and ensure security in financial transactions.\n- Active participation in the company's transition from a monolithic e-commerce platform to a microservices architecture, including implementing infrastructure using Evoy, aiming to increase scalability, reduce system response time, and facilitate maintenance and the implementation of new features."
+    },
+    {
+      "company": "TrackerUp",
+      "period": "April 2019 - May 2022, Formiga, Minas Gerais, Brazil",
+      "role": "Software Developer",
+      "description": "- Responsible for maintaining and enhancing a tracking and task routing system for field employees, aiming to increase operational efficiency, reduce travel time, and ensure the accuracy of location and routing data.\n- Worked on software development, testing, and performance optimization, aiming for stability, performance improvement, and a smooth user experience.\n- Applied good programming practices, prioritizing robust, scalable solutions with an improved user experience."
+    },
+    {
+      "company": "TrackerUp",
+      "period": "January 2018 - April 2019, Formiga, Minas Gerais, Brazil",
+      "role": "Quality Control Analyst and N1 Support",
+      "description": "- Responsible for ensuring the quality of the company's products and services, performing meticulous tests to identify flaws and ensure compliance with established standards.\n- Acted as N1 support, providing initial assistance to customers, resolving simple issues, and offering guidance on product usage.\n- Triaged and forwarded more complex cases to specialized teams."
+    },
+    {
+      "company": "INSS",
+      "period": "January 2012 - December 2013, Formiga, Minas Gerais, Brazil",
+      "role": "Intern",
+      "description": "- Assisted in monitoring administrative processes, including filing and case lookups.\n- Issued documents for appeals boards.\n- Provided public assistance/customer service."
+    }
+  ],
+  "education": {
+    "title": "Pontifical Catholic University of Minas Gerais - PUC",
+    "content": "Bachelor's Degree in Information Systems | 2011 - 2015"
+  },
+  "skills": {
+    "list": [
+      "Vue",
+      "React",
+      "Laravel",
+      "React-Native",
+      "Expo",
+      "PHP",
+      "Go",
+      "NodeJS",
+      "Javascript",
+      "Typescript",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  "aboutMe": {
+    "content": "Backend Software Engineer with extensive experience in Clean Architecture, development best practices, and scalable solutions, working mainly with Go, Node.js, and Laravel. I have experience transitioning monolithic systems to microservices architectures, always prioritizing maintainable code, automated testing, and agile methodologies."
+  },
+  "interests": {
+    "frontend": "Front-end Development",
+    "backend": "Back-end Development",
+    "devops": "DevOps Engineering",
+    "qa": "Quality Assurance (QA) Analyst"
+  },
+  "header": {
+    "birthday": "04/04/1990"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

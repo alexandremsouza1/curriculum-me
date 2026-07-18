@@ -1,5 +1,6 @@
 import { Image, Page, StyleSheet, Text, View } from '@react-pdf/renderer';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -125,285 +126,284 @@ const styles = StyleSheet.create({
   },
   row: { display: 'flex', flexDirection: 'row' }
 });
-const ResumePage = () => (
-  <Page size="A4" style={styles.page}>
-    <View style={styles.sidebar}>
-      <Image style={styles.image} src={`assets/alexandre_photo.png`} />
-      <View style={styles.sidebar_content}>
-        <View style={styles.icon_container}>
-          <View style={styles.circle} />
-          <Image style={styles.icon} src="assets/icon-tag.png" />
-        </View>
-        <View style={styles.subject}>
-          <Text style={styles.subject_title}>SOBRE MIM</Text>
-          <Text
-            style={[
-              styles.subject_content,
-              { marginTop: 5, marginLeft: -10, marginRight: -10 },
-            ]}
-          >
-            Graduado em Sistemas de Informação, sou um profissional da área da
-            tecnologia com foco principal no desenvolvimento de soluções
-            backend. Tenho uma sólida experiência em arquitetura limpa e
-            aplicação de boas práticas de desenvolvimento. Como desenvolvedor
-            experiente, já trabalhei com uma variedade de projetos, incluindo
-            e-commerce, sistemas de rastreamento e integrações.
-          </Text>
-        </View>
-        <View style={styles.icon_container}>
-          <View style={styles.circle} />
-          <Image style={styles.icon} src="assets/icon-puzzle.png" />
-        </View>
-        <View style={styles.subject}>
-          <Text style={styles.subject_title}>INTERESSES</Text>
-          <View style={styles.subject_content}>
-            <Text style={styles.interest_title}>Front-end Development</Text>
-            <View style={styles.progressbar_bg}>
-              <View style={[styles.progressbar_fg, { width: "85%" }]} />
-            </View>
-          </View>
-          <View style={styles.subject_content}>
-            <Text style={styles.interest_title}>Back-end Development</Text>
-            <View style={styles.progressbar_bg}>
-              <View style={[styles.progressbar_fg, { width: "75%" }]} />
-            </View>
-          </View>
-          <View style={styles.subject_content}>
-            <Text style={styles.interest_title}>Dev-Ops Engineering</Text>
-            <View style={styles.progressbar_bg}>
-              <View style={[styles.progressbar_fg, { width: "70%" }]} />
-            </View>
-          </View>
-          <View style={styles.subject_content}>
-            <Text style={styles.interest_title}>Quality Assurance Analyst</Text>
-            <View style={styles.progressbar_bg}>
-              <View style={[styles.progressbar_fg, { width: "69%" }]} />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View style={styles.section}>
-      <View style={styles.header}>
-        <Text style={styles.pagetitle}>CURRICULUM VITAE</Text>
-        <Text style={styles.name}>
-          Alexandre Magno <Text style={styles.birthday}>Abr 04-04-1990</Text>
-        </Text>
-        <View style={styles.row}>
-          <Image style={styles.small_icon} src="assets/icon-phone.png" />
 
-          <Text style={styles.contactdetails}>(+37)9 99492674</Text>
-          <Image style={styles.small_icon} src="assets/icon-mail.png" />
+const ResumePage = () => {
+  const { t } = useTranslation();
 
-          <Text style={styles.contactdetails}> xandemag@gmail.com</Text>
-        </View>
-        <View style={styles.row}>
-          <Image style={styles.small_icon} src="assets/icon-location-pin.png" />
-          <Text>Formiga-MG</Text>
-        </View>
-      </View>
-      <View>
-        <View
-          style={{ display: "flex", flexDirection: "row", marginBottom: 10 }}
-        >
-          <View style={(styles.icon_container, { paddingLeft: 0 })}>
+  return (
+    <Page size="A4" style={styles.page}>
+      <View style={styles.sidebar}>
+        <Image style={styles.image} src={`assets/alexandre_photo.png`} />
+        <View style={styles.sidebar_content}>
+          <View style={styles.icon_container}>
             <View style={styles.circle} />
-            <Image style={styles.icon} src="assets/icon-work.png" />
+            <Image style={styles.icon} src="assets/icon-tag.png" />
           </View>
-          <View
-            style={
-              (styles.subject,
-              { textAlign: "left", paddingTop: 8, paddingLeft: 10 })
-            }
-          >
-            <Text style={styles.subject_title}>EXPERIÊNCIA DE TRABALHO</Text>
-          </View>
-        </View>
-        <View style={styles.timeline_item}>
-          <View style={{ width: 80, padding: 5, paddingTop: 0 }}>
-            <Text>2022 - 2024</Text>
-          </View>
-
-          <View style={{}}>
-            <Image
-              style={styles.timeline_bullet}
-              src="assets/timeline-bullet.png"
-            />
-          </View>
-          <View style={{ padding: 5, paddingTop: 0 }}>
-            <Text style={styles.company}>MOBIUP BEYOND DIGITAL</Text>
-            <Text>Full-Stack Web-Developer</Text>
-          </View>
-        </View>
-        <View style={styles.timeline_item}>
-          <View style={{ width: 80, padding: 5, paddingTop: 0 }}>
-            <Text>2018 - 2022</Text>
-          </View>
-
-          <View style={{}}>
-            <Image
-              style={styles.timeline_bullet}
-              src="assets/timeline-bullet.png"
-            />
-          </View>
-          <View style={{ padding: 5, paddingTop: 0 }}>
-            <Text style={styles.company}>TRACKER UP TECNOLOGIA LTDA</Text>
-            <Text>Desenvolvedor Web</Text>
-          </View>
-        </View>
-        <View style={styles.timeline_item}>
-          <View style={{ width: 80, padding: 5, paddingTop: 0 }}>
-            <Text>2017 - 2017</Text>
-          </View>
-
-          <View style={{}}>
-            <Image
-              style={styles.timeline_bullet}
-              src="assets/timeline-bullet.png"
-            />
-          </View>
-          <View style={{ padding: 5, paddingTop: 0 }}>
-            <Text style={styles.company}>W.E LOGUS INFORMATICA LTDA</Text>
-            <Text>Assistente de TI</Text>
-          </View>
-        </View>
-        <View style={styles.timeline_item}>
-          <View style={{ width: 80, padding: 5, paddingTop: 0 }}>
-            <Text>2016 - 2016</Text>
-          </View>
-
-          <View style={{}}>
-            <Image
-              style={styles.timeline_bullet}
-              src="assets/timeline-bullet-last.png"
-            />
-          </View>
-          <View style={{ padding: 5, paddingTop: 0 }}>
-            <Text style={styles.company}>SOL LOGISTICA E LOCAÇÕES LTDA ME</Text>
-            <Text>Auxiliar de TI</Text>
-          </View>
-        </View>
-
-        <View
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            marginTop: 13,
-            marginBottom: 10,
-          }}
-        >
-          <View style={(styles.icon_container, { paddingLeft: 0 })}>
-            <View style={styles.circle} />
-            <Image style={styles.icon} src="assets/icon-library.png" />
-          </View>
-
-          <View
-            style={
-              (styles.subject,
-              { textAlign: "left", paddingTop: 8, paddingLeft: 10 })
-            }
-          >
-            <Text style={styles.subject_title}>EDUCAÇÃO</Text>
-          </View>
-        </View>
-        <View style={styles.timeline_item}>
-          <View style={{ width: 64, padding: 5, paddingTop: 0 }}>
-            <Text>Jun 2011</Text>
-            <Text>Dez 2015</Text>
-          </View>
-
-          <View style={{}}>
-            <Image
-              style={styles.timeline_bullet}
-              src="assets/timeline-bullet.png"
-            />
-          </View>
-          <View style={{ padding: 5, paddingTop: 0 }}>
-            <Text style={styles.company}>
-              Pontifícia Universidade Católica de Minas Gerais
+          <View style={styles.subject}>
+            <Text style={styles.subject_title}>{t('sections.aboutMe')}</Text>
+            <Text
+              style={[
+                styles.subject_content,
+                { marginTop: 5, marginLeft: -10, marginRight: -10 },
+              ]}
+            >
+              {t('aboutMe.content')}
             </Text>
-            <Text>Bacharel em Sistemas da Informação</Text>
           </View>
-        </View>
-
-        <View
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            marginTop: 17,
-            marginBottom: 10,
-          }}
-        >
-          <View style={(styles.icon_container, { paddingLeft: 0 })}>
+          <View style={styles.icon_container}>
             <View style={styles.circle} />
-            <Image style={styles.icon} src="assets/icon-thumbs-up.png" />
+            <Image style={styles.icon} src="assets/icon-puzzle.png" />
           </View>
-          <View
-            style={
-              (styles.subject,
-              { textAlign: "left", paddingTop: 8, paddingLeft: 10 })
-            }
-          >
-            <Text style={styles.subject_title}>PAIXÃO POR</Text>
+          <View style={styles.subject}>
+            <Text style={styles.subject_title}>{t('sections.interests')}</Text>
+            <View style={styles.subject_content}>
+              <Text style={styles.interest_title}>{t('interests.frontend')}</Text>
+              <View style={styles.progressbar_bg}>
+                <View style={[styles.progressbar_fg, { width: "85%" }]} />
+              </View>
+            </View>
+            <View style={styles.subject_content}>
+              <Text style={styles.interest_title}>{t('interests.backend')}</Text>
+              <View style={styles.progressbar_bg}>
+                <View style={[styles.progressbar_fg, { width: "75%" }]} />
+              </View>
+            </View>
+            <View style={styles.subject_content}>
+              <Text style={styles.interest_title}>{t('interests.devops')}</Text>
+              <View style={styles.progressbar_bg}>
+                <View style={[styles.progressbar_fg, { width: "70%" }]} />
+              </View>
+            </View>
+            <View style={styles.subject_content}>
+              <Text style={styles.interest_title}>{t('interests.qa')}</Text>
+              <View style={styles.progressbar_bg}>
+                <View style={[styles.progressbar_fg, { width: "69%" }]} />
+              </View>
+            </View>
           </View>
-        </View>
-        <View style={styles.row}>
-          <Text style={styles.tag}>Linux</Text>
-          <Text style={styles.tag}>Ubuntu</Text>
-          <Text style={styles.tag}>GPT</Text>
-          <Text style={styles.tag}>Android</Text>
-          <Text style={styles.tag}>Docker</Text>
-        </View>
-        <View style={styles.row}>
-          <Text style={styles.tag}>git</Text>
-          <Text style={styles.tag}>kubernetes</Text>
-          <Text style={styles.tag}>AdonisJs</Text>
-          <Text style={styles.tag}>VSCode</Text>
-          <Text style={styles.tag}>firebase</Text>
-        </View>
-        <View style={styles.row}>
-          <Text style={styles.tag}>NodeJS</Text>
-          <Text style={styles.tag}>PHP</Text>
-          <Text style={styles.tag}>HTML5</Text>
-          <Text style={styles.tag}>CSS3</Text>
-          <Text style={styles.tag}>JavaScript</Text>
-        </View>
-        <View style={styles.row}>
-          <Text style={styles.tag}>TypeScript</Text>
-          <Text style={styles.tag}>Jest</Text>
-          <Text style={styles.tag}>Webpack</Text>
-          <Text style={styles.tag}>VUE</Text>
-          <Text style={styles.tag}>React</Text>
-        </View>
-        <View style={styles.row}>
-          <Text style={styles.tag}>React Native</Text>
-          <Text style={styles.tag}>Redux</Text>
-          <Text style={styles.tag}>Laravel</Text>
-          <Text style={styles.tag}>GraphQL</Text>
-          <Text style={styles.tag}>Mongo</Text>
         </View>
       </View>
-    </View>
-    <View
-      style={[
-        styles.row,
-        {
-          position: "absolute",
-          top: "98%",
-          height: 20,
-          width: "100%",
-          backgroundColor: "#f1592a",
-          color: "#fff",
-          textAlign: "center",
-        },
-      ]}
-    >
-      <Text fixed={true}>
-        Todos os direitos reservados
-        <Text style={styles.strong}> ©{new Date().getFullYear()}</Text>
-      </Text>
-    </View>
-  </Page>
-);
+      <View style={styles.section}>
+        <View style={styles.header}>
+          <Text style={styles.pagetitle}>{t('app.title')}</Text>
+          <Text style={styles.name}>
+            {t('contact.firstName')} {t('contact.lastName')} <Text style={styles.birthday}>{t('header.birthday')}</Text>
+          </Text>
+          <View style={styles.row}>
+            <Image style={styles.small_icon} src="assets/icon-phone.png" />
+
+            <Text style={styles.contactdetails}>{t('contact.phone')}</Text>
+            <Image style={styles.small_icon} src="assets/icon-mail.png" />
+
+            <Text style={styles.contactdetails}> {t('contact.email')}</Text>
+          </View>
+          <View style={styles.row}>
+            <Image style={styles.small_icon} src="assets/icon-location-pin.png" />
+            <Text>{t('contact.location')}</Text>
+          </View>
+        </View>
+        <View>
+          <View
+            style={{ display: "flex", flexDirection: "row", marginBottom: 10 }}
+          >
+            <View style={(styles.icon_container, { paddingLeft: 0 })}>
+              <View style={styles.circle} />
+              <Image style={styles.icon} src="assets/icon-work.png" />
+            </View>
+            <View
+              style={
+                (styles.subject,
+                { textAlign: "left", paddingTop: 8, paddingLeft: 10 })
+              }
+            >
+              <Text style={styles.subject_title}>{t('sections.workExperience')}</Text>
+            </View>
+          </View>
+          <View style={styles.timeline_item}>
+            <View style={{ width: 80, padding: 5, paddingTop: 0 }}>
+              <Text>2022 - 2024</Text>
+            </View>
+
+            <View style={{}}>
+              <Image
+                style={styles.timeline_bullet}
+                src="assets/timeline-bullet.png"
+              />
+            </View>
+            <View style={{ padding: 5, paddingTop: 0 }}>
+              <Text style={styles.company}>MOBIUP BEYOND DIGITAL</Text>
+              <Text>{t('jobs.1.role')}</Text>
+            </View>
+          </View>
+          <View style={styles.timeline_item}>
+            <View style={{ width: 80, padding: 5, paddingTop: 0 }}>
+              <Text>2018 - 2022</Text>
+            </View>
+
+            <View style={{}}>
+              <Image
+                style={styles.timeline_bullet}
+                src="assets/timeline-bullet.png"
+              />
+            </View>
+            <View style={{ padding: 5, paddingTop: 0 }}>
+              <Text style={styles.company}>TRACKER UP TECNOLOGIA LTDA</Text>
+              <Text>{t('jobs.3.role')}</Text>
+            </View>
+          </View>
+          <View style={styles.timeline_item}>
+            <View style={{ width: 80, padding: 5, paddingTop: 0 }}>
+              <Text>2017 - 2017</Text>
+            </View>
+
+            <View style={{}}>
+              <Image
+                style={styles.timeline_bullet}
+                src="assets/timeline-bullet.png"
+              />
+            </View>
+            <View style={{ padding: 5, paddingTop: 0 }}>
+              <Text style={styles.company}>W.E LOGUS INFORMATICA LTDA</Text>
+              <Text>{t('jobs.4.role')}</Text>
+            </View>
+          </View>
+          <View style={styles.timeline_item}>
+            <View style={{ width: 80, padding: 5, paddingTop: 0 }}>
+              <Text>2016 - 2016</Text>
+            </View>
+
+            <View style={{}}>
+              <Image
+                style={styles.timeline_bullet}
+                src="assets/timeline-bullet-last.png"
+              />
+            </View>
+            <View style={{ padding: 5, paddingTop: 0 }}>
+              <Text style={styles.company}>SOL LOGISTICA E LOCAÇÕES LTDA ME</Text>
+              <Text>{t('jobs.5.role')}</Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              marginTop: 13,
+              marginBottom: 10,
+            }}
+          >
+            <View style={(styles.icon_container, { paddingLeft: 0 })}>
+              <View style={styles.circle} />
+              <Image style={styles.icon} src="assets/icon-library.png" />
+            </View>
+
+            <View
+              style={
+                (styles.subject,
+                { textAlign: "left", paddingTop: 8, paddingLeft: 10 })
+              }
+            >
+              <Text style={styles.subject_title}>{t('sections.education')}</Text>
+            </View>
+          </View>
+          <View style={styles.timeline_item}>
+            <View style={{ width: 64, padding: 5, paddingTop: 0 }}>
+              <Text>Jun 2011</Text>
+              <Text>Dez 2015</Text>
+            </View>
+
+            <View style={{}}>
+              <Image
+                style={styles.timeline_bullet}
+                src="assets/timeline-bullet.png"
+              />
+            </View>
+            <View style={{ padding: 5, paddingTop: 0 }}>
+              <Text style={styles.company}>
+                {t('education.title')}
+              </Text>
+              <Text>{t('education.content')}</Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              marginTop: 17,
+              marginBottom: 10,
+            }}
+          >
+            <View style={(styles.icon_container, { paddingLeft: 0 })}>
+              <View style={styles.circle} />
+              <Image style={styles.icon} src="assets/icon-thumbs-up.png" />
+            </View>
+            <View
+              style={
+                (styles.subject,
+                { textAlign: "left", paddingTop: 8, paddingLeft: 10 })
+              }
+            >
+              <Text style={styles.subject_title}>{t('sections.passion')}</Text>
+            </View>
+          </View>
+          <View style={styles.row}>
+            <Text style={styles.tag}>Linux</Text>
+            <Text style={styles.tag}>Ubuntu</Text>
+            <Text style={styles.tag}>GPT</Text>
+            <Text style={styles.tag}>Android</Text>
+            <Text style={styles.tag}>Docker</Text>
+          </View>
+          <View style={styles.row}>
+            <Text style={styles.tag}>git</Text>
+            <Text style={styles.tag}>kubernetes</Text>
+            <Text style={styles.tag}>AdonisJs</Text>
+            <Text style={styles.tag}>VSCode</Text>
+            <Text style={styles.tag}>firebase</Text>
+          </View>
+          <View style={styles.row}>
+            <Text style={styles.tag}>NodeJS</Text>
+            <Text style={styles.tag}>PHP</Text>
+            <Text style={styles.tag}>HTML5</Text>
+            <Text style={styles.tag}>CSS3</Text>
+            <Text style={styles.tag}>JavaScript</Text>
+          </View>
+          <View style={styles.row}>
+            <Text style={styles.tag}>TypeScript</Text>
+            <Text style={styles.tag}>Jest</Text>
+            <Text style={styles.tag}>Webpack</Text>
+            <Text style={styles.tag}>VUE</Text>
+            <Text style={styles.tag}>React</Text>
+          </View>
+          <View style={styles.row}>
+            <Text style={styles.tag}>React Native</Text>
+            <Text style={styles.tag}>Redux</Text>
+            <Text style={styles.tag}>Laravel</Text>
+            <Text style={styles.tag}>GraphQL</Text>
+            <Text style={styles.tag}>Mongo</Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={[
+          styles.row,
+          {
+            position: "absolute",
+            top: "98%",
+            height: 20,
+            width: "100%",
+            backgroundColor: "#f1592a",
+            color: "#fff",
+            textAlign: "center",
+          },
+        ]}
+      >
+        <Text fixed={true}>
+          {t('footer.rights')} <Text style={styles.strong}> ©{new Date().getFullYear()}</Text>
+        </Text>
+      </View>
+    </Page>
+  );
+};
 
 export default ResumePage;

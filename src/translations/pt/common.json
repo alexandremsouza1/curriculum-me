@@ -1,0 +1,101 @@
+{
+  "app": {
+    "title": "Currículo"
+  },
+  "contact": {
+    "firstName": "Alexandre",
+    "lastName": "Magno",
+    "email": "alexandremagnodev0@gmail.com",
+    "phone": "(37)9 9949-2674",
+    "location": "Minas Gerais, Brasil"
+  },
+  "sections": {
+    "aboutMe": "Sobre Mim",
+    "interests": "Interesses",
+    "professionalSummary": "Resumo Profissional",
+    "personalInformation": "Informações Pessoais",
+    "workExperience": "Experiência Profissional",
+    "education": "Formação Acadêmica",
+    "skills": "Habilidades",
+    "passion": "Paixão por"
+  },
+  "professionalSummary": {
+    "content": "Backend Software Engineer com ampla experiência em Clean Architecture, boas práticas de desenvolvimento e soluções escaláveis. Minha expertise está em Go, Node.js e Laravel (PHP), sempre priorizando um código manutenível e eficiente. Sou entusiasta de Docker e Kubernetes, utilizando-os para automação e escalabilidade em ambientes de desenvolvimento e produção. Acredito no poder dos Testes Unitários e TDD para garantir a confiabilidade do software, além de resolver problemas antes que surjam. Metodologias Ágeis são parte essencial do meu trabalho, e estou constantemente buscando inovação para fortalecer a estabilidade e a evolução dos sistemas."
+  },
+  "personalInformation": {
+    "content": "Data de Nascimento: 04/04/1990\nLinkedIn: https://www.linkedin.com/in/alexandre-m-souza/\nSite pessoal: https://alexandremsouza1.github.io/curriculum-me/"
+  },
+  "jobs": [
+    {
+      "company": "LETS Delivery",
+      "period": "Fevereiro de 2025 - Atual, São Paulo, Brasil · Remoto",
+      "role": "Engenheiro Full Stack",
+      "description": "- Responsável pela manutenção e desenvolvimento de projetos relacionados ao hub de integrações.\n- Utilizo Node.js para a criação de APIs e AWS Lambda para a execução de funções serverless, conectando comerciantes a diversos marketplaces e parceiros logísticos em um sistema unificado.\n- Adoto as melhores práticas de desenvolvimento, escrevendo código limpo e eficiente.\n- Implemento testes unitários com Jest para garantir a qualidade e a confiabilidade das soluções entregues."
+    },
+    {
+      "company": "Plastika Produtos Digitais",
+      "period": "Outubro de 2024 - Fevereiro de 2025, Curitiba, Paraná, Brasil · Remoto",
+      "role": "Desenvolvedor Full-Stack Web",
+      "description": "- Responsável pela sustentação do projeto Aston, uma fintech focada em oferecer soluções financeiras digitais.\n- Desenvolvimento da funcionalidade que permite que agentes fiduciários e correspondentes bancários realizem a venda de produtos financeiros diretamente pela plataforma.\n- Atuação em desenvolvimento, testes e otimização, com foco em estabilidade e performance.\n- Garantia de escalabilidade, suporte a múltiplos provedores, performance e disponibilidade."
+    },
+    {
+      "company": "Mobiup - Beyond Digital",
+      "period": "Maio de 2022 - Julho de 2024, São Paulo, Brasil",
+      "role": "Desenvolvedor Web",
+      "description": "- Responsável por conduzir melhorias, implementar novas funcionalidades e realizar correções, garantindo a estabilidade e eficiência dos sistemas.\n- Manutenção e aprimoramento de projetos de e-commerce, blogs e integrações de meios de pagamento, buscando melhorar a experiência do usuário, otimizar processos de compra e garantir a segurança nas transações financeiras.\n- Participação ativa na transição da empresa de um e-commerce monolítico para uma arquitetura de microsserviços, incluindo a implementação de uma infraestrutura utilizando Evoy, visando aumentar a escalabilidade, reduzir o tempo de resposta do sistema e facilitar a manutenção e a implementação de novas funcionalidades."
+    },
+    {
+      "company": "TrackerUp",
+      "period": "Abril de 2019 - Maio de 2022, Formiga, Minas Gerais, Brasil",
+      "role": "Desenvolvedor de Software",
+      "description": "- Responsável pela manutenção e aprimoramento de um sistema de rastreamento e roteirização de tarefas para colaboradores em campo, com o objetivo de aumentar a eficiência operacional, reduzir o tempo de deslocamento e garantir a precisão dos dados de localização e roteirização.\n- Atuação em desenvolvimento de software, testes e otimização de desempenho, visando estabilidade, melhoria de performance e uma experiência de usuário fluida.\n- Aplicação de boas práticas de programação, priorizando soluções robustas, escaláveis e com experiência de usuário aprimorada."
+    },
+    {
+      "company": "TrackerUp",
+      "period": "Janeiro de 2018 - Abril de 2019, Formiga, Minas Gerais, Brasil",
+      "role": "Analista de Controle de Qualidade e Suporte N1",
+      "description": "- Responsável por garantir a qualidade dos produtos e serviços da empresa, realizando testes meticulosos para identificar falhas e garantir conformidade com os padrões estabelecidos.\n- Atuação como suporte N1, oferecendo assistência inicial aos clientes, resolvendo problemas simples e fornecendo orientação sobre o uso do produto.\n- Triagem e encaminhamento de casos mais complexos para equipes especializadas."
+    },
+    {
+      "company": "INSS",
+      "period": "Janeiro de 2012 - Dezembro de 2013, Formiga, Minas Gerais, Brasil",
+      "role": "Estagiário",
+      "description": "- Auxílio no acompanhamento de processos administrativos, incluindo arquivamento e consulta de processos.\n- Expedição de documentos para as juntas de recursos.\n- Atendimento ao público."
+    }
+  ],
+  "education": {
+    "title": "Pontifícia Universidade Católica de Minas Gerais - PUC",
+    "content": "Bacharelado em Sistemas de Informação | 2011 - 2015"
+  },
+  "skills": {
+    "list": [
+      "Vue",
+      "React",
+      "Laravel",
+      "React-Native",
+      "Expo",
+      "PHP",
+      "Go",
+      "NodeJS",
+      "Javascript",
+      "Typescript",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  "aboutMe": {
+    "content": "Backend Software Engineer com ampla experiência em Clean Architecture, boas práticas de desenvolvimento e soluções escaláveis, atuando principalmente com Go, Node.js e Laravel. Tenho experiência na transição de sistemas monolíticos para arquiteturas de microsserviços, sempre priorizando código manutenível, testes automatizados e metodologias ágeis."
+  },
+  "interests": {
+    "frontend": "Desenvolvimento Front-end",
+    "backend": "Desenvolvimento Back-end",
+    "devops": "Engenharia DevOps",
+    "qa": "Analista de Qualidade (QA)"
+  },
+  "header": {
+    "birthday": "04/04/1990"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados"
+  }
+}
