@@ -1,5 +1,6 @@
-import { Font, PDFViewer, Document, PDFDownloadLink } from '@react-pdf/renderer';
-import React, { Component } from 'react';
+import { Font, PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
+import React, { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import LoadingSpinner from './components/LoadingSpinner';
 import { MyDocument } from './elements/Document';
 import { isMobile, isBrowser } from 'react-device-detect';
@@ -36,52 +37,88 @@ Font.register({
   ]
 });
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { pdfLoaded: false };
-    this.handleRender = this.handleRender.bind(this);
-  }
+function App() {
+  // useTranslation SÓ pode ser chamado aqui (componente de função, renderizado
+  // pelo react-dom normal) — nunca dentro de MyDocument/ResumePage, que rodam
+  // no reconciliador próprio do react-pdf.
+  const { t } = useTranslation();
 
-  handleRender() {
-    if (!this.state.pdfLoaded) {
-      this.setState({ pdfLoaded: true });
+  const [pdfLoaded, setPdfLoaded] = useState(false);
+
+  const handleRender = () => {
+    if (!pdfLoaded) {
+      setPdfLoaded(true);
     }
-  }
+  };
 
-  render() {
-    const MyDocMobile = () => (
-      <Document>
-        <MyDocument />
-      </Document>
-    );
-    return (
-      <>
-        {isBrowser && (
-          <>
-            {this.state.pdfLoaded ? null : <LoadingSpinner />}
-            <PDFViewer style={{ width: '100vw', height: '100vh' }}>
-              <Document onRender={this.handleRender}>
-                <MyDocument />
-              </Document>
-            </PDFViewer>
-          </>
-        )}
-        {isMobile && (
-          <div className="center">
-            <PDFDownloadLink
-              document={<MyDocMobile />}
-              fileName="curriculo_alexandre.pdf"
-            >
-              {({ loading }) =>
-                loading ? <LoadingSpinner /> : 'Download now!'
-              }
-            </PDFDownloadLink>
-          </div>
-        )}
-      </>
-    );
-  }
+  const content = useMemo(() => {
+    // "jobs" no JSON é um array (0..5) com company, period, role e description
+    // juntos em cada item — pega o array inteiro já traduzido de uma vez.
+    const jobs = t('jobs', { returnObjects: true });
+    const skillsList = t('skills.list', { returnObjects: true });
+ 
+    return {
+      appTitle: t('app.title'),
+      sections: {
+        aboutMe: t('sections.aboutMe'),
+        interests: t('sections.interests'),
+        passion: t('sections.passion'),
+        professionalSummary: t('sections.professionalSummary'),
+        personalInformation: t('sections.personalInformation'),
+        workExperience: t('sections.workExperience'),
+        education: t('sections.education'),
+        skills: t('sections.skills'),
+      },
+      aboutMe: { content: t('aboutMe.content') },
+      interests: {
+        frontend: t('interests.frontend'),
+        backend: t('interests.backend'),
+        devops: t('interests.devops'),
+        qa: t('interests.qa'),
+      },
+      professionalSummary: { content: t('professionalSummary.content') },
+      personalInformation: { content: t('personalInformation.content') },
+      contact: {
+        firstName: t('contact.firstName'),
+        lastName: t('contact.lastName'),
+        phone: t('contact.phone'),
+        email: t('contact.email'),
+        location: t('contact.location'),
+      },
+      header: { birthday: t('header.birthday') },
+      jobs,
+      education: {
+        title: t('education.title'),
+        content: t('education.content'),
+      },
+      skills: { list: skillsList },
+      footer: { rights: t('footer.rights') },
+    };
+  }, [t]);
+
+
+  return (
+    <>
+      {isBrowser && (
+        <>
+          {pdfLoaded ? null : <LoadingSpinner />}
+          <PDFViewer style={{ width: '100vw', height: '100vh' }}>
+            <MyDocument content={content} onRender={handleRender} />
+          </PDFViewer>
+        </>
+      )}
+      {isMobile && (
+        <div className="center">
+          <PDFDownloadLink
+            document={<MyDocument content={content} />}
+            fileName="curriculo_alexandre.pdf"
+          >
+            {({ loading }) => (loading ? <LoadingSpinner /> : 'Download now!')}
+          </PDFDownloadLink>
+        </div>
+      )}
+    </>
+  );
 }
 
 export default App;
