@@ -2,18 +2,18 @@
 
 name: Deploy to GitHub Pages
 env:
-  MY_SECRET: ${{secrets.ACCOUNT}}
-  USER_NAME: garyTsai
-  USER_EMAIL: githubaction@fake.com
-  PUBLISH_DIR: ./build
-  REACT_APP_APP_KEY: ${{secrets.REACT_APP_APP_KEY}}
-  REACT_APP_AUTHDOMAIN: ${{secrets.REACT_APP_AUTHDOMAIN}}
-  REACT_APP_DATABSEURL: ${{secrets.REACT_APP_DATABSEURL}}
-  REACT_APP_PROJECTID: ${{secrets.REACT_APP_PROJECTID}}
-  REACT_APP_STORAGEBUCKET: ${{secrets.REACT_APP_STORAGEBUCKET}}
-  REACT_APP_MESSAGEINGSENDERID: ${{secrets.REACT_APP_MESSAGEINGSENDERID}}
-  REACT_APP_APPID: ${{secrets.REACT_APP_APPID}}
-  REACT_APP_MEASUREMENTID: ${{secrets.REACT_APP_MEASUREMENTID}}
+  MY_SECRET   : ${{secrets.ACCOUNT}}
+  USER_NAME   : garyTsai
+  USER_EMAIL  : githubaction@fake.com
+  PUBLISH_DIR : ./build
+  REACT_APP_APP_KEY : ${{secrets.REACT_APP_APP_KEY}}
+  REACT_APP_AUTHDOMAIN : ${{secrets.REACT_APP_AUTHDOMAIN}}
+  REACT_APP_DATABSEURL : ${{secrets.REACT_APP_DATABSEURL}}
+  REACT_APP_PROJECTID : ${{secrets.REACT_APP_PROJECTID}}
+  REACT_APP_STORAGEBUCKET : ${{secrets.REACT_APP_STORAGEBUCKET}}
+  REACT_APP_MESSAGEINGSENDERID : ${{secrets.REACT_APP_MESSAGEINGSENDERID}}
+  REACT_APP_APPID : ${{secrets.REACT_APP_APPID}}
+  REACT_APP_MEASUREMENTID : ${{secrets.REACT_APP_MEASUREMENTID}}
 
 # Controls when the workflow will run
 on:
@@ -21,7 +21,7 @@ on:
   push:
     branches: [ master ]
     tags:
-      - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
+          - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -37,18 +37,22 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-
+      - uses: actions/checkout@v2
+          
       # Install Node JS environment
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
 
       - name: Run Dependencies
-        run: npm install --legacy-peer-deps
+        run: |
+          npm install
 
+      # Use Install Dependencies    
+      - name: Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: npm install
+      
       # Run Pre - deploy
       - name: run predeploy
         id: predeploy
@@ -57,9 +61,8 @@ jobs:
       # Ignore the set-env
       - name: Set Actions Allow Unsecure Commands
         run: |
-          echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
-
-      # Use this action to deploy
+          echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV          
+      # Use thie action to deploy
       - name: Commit garytsai to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
